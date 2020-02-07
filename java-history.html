@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Java runtimes lifespan</title>
+		<title>Java runtimes lifespan - History</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="https://sbstjn.github.io/timesheet.js/styles/timesheet.css" />
 		<style>
-			.timesheet{width: 1924px; height: 1024px}
+			.timesheet{width: 2124px; height: 1024px}
 		</style>
 	</head>
 	<body>
@@ -14,7 +14,13 @@
 		<script src="timesheet.min.js"></script>
 		<script>
 			console.log("this.container="+this.container)
-			new Timesheet('timesheet', 2002, 2030, [
+			new Timesheet('timesheet', 1996, 2030, [
+				['01/1996', '08/2001', 'jdk1.0', 'sit'],
+				['02/1996', '02/2003', 'jdk1.1', 'sit'],
+				['12/1998', '10/2003', 'jdk1.2', 'sit'],
+				['05/2000', '12/2006', 'jdk1.3', 'sit'],
+				['02/2002', '10/2008', 'jdk1.4', 'sit'],
+				['09/2004', '10/2009', 'jdk5', 'sit'],
 				['12/2006', '12/2015', 'jdk6', 'sit'],
 				['12/2015', '12/2018', 'jdk6-ext', 'sit'],
 				['07/2011', '10/2017', 'RH jdk6', ''],
@@ -38,14 +44,6 @@
 				['09/2011', '04/2022', 'ibm sdk7', 'ipsum'],
 				['11/2013', '04/2022', 'ibm sdk7.1', 'ipsum'],
 				['02/2015', '04/2022', 'ibm sdk8', 'ipsum'],
-				['07/2011', '04/2018', 'was8.0 nd', 'ipsum'],
-				['06/2012', '06/2016', 'liberty8.5', 'ipsum'],
-				['06/2012', '04/2022', 'was8.5 nd ...', 'ipsum'],
-				['06/2013', '04/2022', 'was8.5.5 nd ...', 'ipsum'],
-				['06/2016', '04/2022', 'was9.0 nd ...', 'ipsum'],
-				['03/2013', '10/2024', 'jboss7', ''],
-				['05/2016', '05/2020', 'jboss-eap7', ''],
-				['05/2020', '05/2029', 'jboss-eap7-ext', ''],
 			]);
 			console.log("timesheet="+timesheet);
 		</script>
@@ -55,6 +53,12 @@
 			Links
 			<ul>
 				<li><a href="https://web.archive.org/web/20070310235103/http://www.sun.com/smi/Press/sunflash/1996-01/sunflash.960123.10561.xml">Java 1.0 GA</a></li>
+				<li><a href="https://web.archive.org/web/20010812010147/http://java.sun.com/products/jdk/1.0.2/">Java 1.0 EOL</a></li>
+				<li><a href="https://web.archive.org/web/20030204225616/http://java.sun.com/products/jdk/1.1/">Java 1.1 EOL</a></li>
+				<li><a href="https://web.archive.org/web/20031205005125/http://java.sun.com/products/jdk/1.2/">Java 1.2 EOL</a></li>
+				<li><a href="https://web.archive.org/web/20070528210632/http://java.sun.com/j2se/1.3/index.jsp">Java 1.3 EOL</a></li>
+				<li><a href="https://web.archive.org/web/20090806185039/http://java.sun.com/j2se/1.4.2/download.html">Java 1.4 EOL</a></li>
+				<li><a href="https://web.archive.org/web/20090803164653/http://java.sun.com/j2se/1.5">Java 1.5 EOL</a></li>
 				<li><a href="https://www.oracle.com/technetwork/java/java-se-support-roadmap.html">Oracle JDK</a></li>
 				<li><a href="https://access.redhat.com/articles/1299013">Red Hat Open JDK</a></li>
 				<li><a href="https://openjdk.java.net/projects/jdk7/">OpenJDK7</a></li>

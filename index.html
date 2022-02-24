@@ -13,7 +13,10 @@
 		<!--script src="https://sbstjn.github.io/timesheet.js/script/timesheet.min.js"></script-->
 		<script src="timesheet.min.js"></script>
 		<script>
-			console.log("this.container="+this.container)
+			today = new Date();
+			formatted = (today.getMonth()+1)+"/"+today.getFullYear();
+
+			console.log("this.container="+this.container);
 			new Timesheet('timesheet', 2002, 2030, [
 				['12/2006', '12/2015', 'jdk6', 'sit'],
 				['12/2015', '12/2018', 'jdk6-ext', 'sit'],
@@ -27,6 +30,7 @@
 				['09/2017', '03/2018', 'jdk9', 'sit'],
 				['03/2018', '09/2018', 'jdk10', 'sit'],
 				['09/2018', '09/2023', 'jdk11', 'dolor'],
+				[formatted, formatted, 'today', 'lorem'],
 				['09/2023', '09/2026', 'jdk11-ext', 'sit'],
 				['09/2018', '10/2024', 'RH jdk11', ''],
 				['03/2019', '09/2019', 'jdk12', 'sit'],
@@ -34,7 +38,6 @@
 				['03/2020', '09/2020', 'jdk14', 'sit'],
 				['09/2020', '03/2021', 'jdk15', 'sit'],
 				['03/2021', '09/2021', 'jdk16', 'sit'],
-				['10/2021', '10/2021', 'today', 'lorem'],
 				['09/2021', '09/2026', 'jdk17', 'sit'],
 				['09/2026', '09/2029', 'jdk17-ext', 'sit'],
 				['11/2007', '09/2017', 'ibm sdk6', 'ipsum'],
